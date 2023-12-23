@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "146062484236",
+    "project_id": "flutternight-transportation",
+    "storage_bucket": "flutternight-transportation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146062484236:android:724114ca575b7822615f29",
+        "android_client_info": {
+          "package_name": "com.example.transportation_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByssjO2ul-KTKF9w7HBP05hPwvitcc_gA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
