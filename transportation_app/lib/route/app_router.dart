@@ -1,5 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 
+import 'app_router.gr.dart';
+
 
 @AutoRouterConfig(
   replaceInRouteName: 'View,Route',
@@ -18,11 +20,11 @@ class AppRouter extends $AppRouter {
     initial: true,
     ),
       AutoRoute(
-    page: LoginRoute.page,
+    page: ProfileRoute.page,
     path: '/login',
     ),
       AutoRoute(
-    page: RegisterRoute.page,
+    page: PlanningRoute.page,
     path: '/register',
     ),
   ];    
