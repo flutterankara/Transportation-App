@@ -1,12 +1,19 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
 import 'route/app_router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
   
+  await Firebase.initializeApp(
+    options: const FirebaseOptions(
+  apiKey: "AIzaSyByssjO2ul-KTKF9w7HBP05hPwvitcc_gA",
+      appId: '1:146062484236:android:724114ca575b7822615f29',
+    messagingSenderId: '146062484236',
+    projectId: 'flutternight-transportation',
+    storageBucket: 'flutternight-transportation.appspot.com',),
+  );
   runApp( MyApp());
 }
 
@@ -28,9 +35,9 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
+@RoutePage()
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  const MyHomePage({super.key});
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -41,7 +48,7 @@ class MyHomePage extends StatefulWidget {
   // used by the build method of the State. Fields in a Widget subclass are
   // always marked "final".
 
-  final String title;
+ 
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -77,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
+        title: Text("Transportation"),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it

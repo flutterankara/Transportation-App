@@ -4,7 +4,7 @@ import 'app_router.gr.dart';
 
 
 @AutoRouterConfig(
-  replaceInRouteName: 'View,Route',
+  replaceInRouteName: 'Page,Route',
   deferredLoading: true,
   )       
 class AppRouter extends $AppRouter {     
@@ -15,14 +15,14 @@ class AppRouter extends $AppRouter {
   @override    
   List<AutoRoute> get routes => [  
   
-/*  AutoRoute(
-    page: HomeRoute.page,
+  AutoRoute(
+    page: MyHomeRoute.page,
     initial: true,
-    ), */
-      AutoRoute(
+    ), 
+/*       AutoRoute(
     page: ProfileRoute.page,
     path: '/login',
-    ),
+    ), */
 /*       AutoRoute(
     page: PlanningRoute.page,
     path: '/register',
