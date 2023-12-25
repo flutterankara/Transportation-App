@@ -1,5 +1,5 @@
 
-# mamak_app
+# Flutter Nigh Transportation App
 ### Table of contents
 - [System requirements](#system-requirements)
 - [Figma design guidelines for better UI accuracy](#figma-design-guideline-for-better-accuracy)
@@ -12,7 +12,7 @@
 
 ### System requirements
 
-Dart SDK Version 2.18.0 or greater.
+Dart SDK Version 3.0.0 or greater.
 Flutter SDK Version 3.3.0 or greater.
 
 ### Figma design guidelines for better UI accuracy
